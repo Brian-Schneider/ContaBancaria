@@ -66,7 +66,7 @@ public class Conta {
 		
 		switch(this.tipo) {
 			case 1 -> tipo = "Conta Corrente";
-			case 2 -> tipo = "Conta Corrente";
+			case 2 -> tipo = "Conta Poupança";
 		}
 		
 		System.out.println("||--------------------------------------------------||");
