@@ -194,6 +194,7 @@ public class Menu {
 				System.out.println("Valor do Saque");
 				valor = leia.nextFloat();
 				
+				contas.sacar(numero,  valor);
 				
 				keyPress();
 				break;
@@ -206,6 +207,8 @@ public class Menu {
 				
 				System.out.println("Valor do Depósito");
 				valor = leia.nextFloat();
+				
+				contas.depositar(numero, valor);
 				
 				keyPress();
 				break;
@@ -221,6 +224,8 @@ public class Menu {
 				
 				System.out.println("Número da Conta Destino:");
 				numeroDestino = leia.nextInt();
+				
+				contas.transferir(numero, numeroDestino, valor);
 				
 				keyPress();	
 				break;
